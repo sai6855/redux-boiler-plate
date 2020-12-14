@@ -115,7 +115,7 @@ export default function App() {
 
       {functions.length > 0 && (
         <>
-          <h1>functions</h1>
+          <h1>Reducers</h1>
           <textarea rows="10" cols="50" value={functions} />
         </>
       )}

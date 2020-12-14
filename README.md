@@ -1,2 +1,2 @@
-# redux-boiler-plate
+# redux-boilerPlate-generator
 Created with CodeSandbox

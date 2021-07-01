@@ -80,12 +80,12 @@ export default function App() {
   const handleCreateThunkFunctions = (names) => {
     const newDispatches = [];
 
-    names.forEach((genName) => {
+    names.forEach((genName, index) => {
       const fName = `export const ${genName} => (payload) => async(dispatch)=>{\ntry{\n}catch(error){\n}\n}`;
-      newDispatches.push(fName);
+      index % 3 === 0 && newDispatches.push(fName);
     });
 
-    setDispatches(() => newDispatches.join("\n"));
+    setDispatches(() => newDispatches.join("\n\n\n"));
   };
 
   function capitalizeFirstLetter(string) {

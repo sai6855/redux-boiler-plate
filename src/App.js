@@ -109,6 +109,7 @@ export default function App() {
       {actions.length > 0 && (
         <>
           <h1>Actions</h1>
+          <button onClick={() => {navigator.clipboard.writeText(actions)}}>copy</button>
           <textarea rows="10" cols="50" value={actions} />
         </>
       )}
@@ -116,6 +117,8 @@ export default function App() {
       {functions.length > 0 && (
         <>
           <h1>Reducers</h1>
+          <button onClick={() => {navigator.clipboard.writeText(functions)}}>copy</button>
+         
           <textarea rows="10" cols="50" value={functions} />
         </>
       )}

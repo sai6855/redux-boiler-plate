@@ -125,7 +125,7 @@ export default function App() {
         <>
           <h1>Reducers</h1>
           <button
-            style={{ width: "2rem", margin: "1rem" }}
+            style={{ width: "4rem", margin: "1rem" }}
             onClick={() => {
               navigator.clipboard.writeText(functions);
             }}

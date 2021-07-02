@@ -27,7 +27,9 @@ export default function App() {
       const actionFunctions = [];
 
       names.forEach((nam, index) => {
-        const actionFunction = `export const ${nam} = createAction(actionTypes.${typesNames[index]});`;
+        const actionFunction = `export const ${nam} = createAction(actionTypes.${typesNames[
+          index
+        ].slice(0, -1)});`;
         actionFunctions.push(actionFunction);
       });
 

@@ -62,7 +62,7 @@ export default function App() {
         return newword;
       });
 
-      return newname.join("");
+      return newname.join("").slice(0, -1);
     });
     return { names, typesNames };
   };

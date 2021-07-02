@@ -70,7 +70,7 @@ export default function App() {
   const handleCreateReducers = (names) => {
     const newFunctions = [];
     names.forEach((genName) => {
-      const fName = `[actionCreators.${genName}]:(state,{payload})=>{return {...state}};`;
+      const fName = `[actionCreators.${genName}]:(state,{payload})=>{return {...state}},`;
       newFunctions.push(fName);
     });
 

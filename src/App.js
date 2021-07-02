@@ -83,7 +83,7 @@ export default function App() {
     const newDispatches = [];
 
     names.forEach((genName, index) => {
-      const fName = `export const ${genName} => (payload) => async(dispatch)=>{\ntry{\n}catch(error){\n}\n}`;
+      const fName = `export const ${genName} = (payload) => async(dispatch)=>{\ntry{\n}catch(error){\n}\n}`;
       index % 3 === 0 && newDispatches.push(fName);
     });
 
